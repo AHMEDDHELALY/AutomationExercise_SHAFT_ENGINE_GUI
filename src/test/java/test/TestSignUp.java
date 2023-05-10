@@ -1,18 +1,12 @@
-package test;
+package GuiTests;
 
-import GuiPages.AccountCreatedPage;
-import GuiPages.AccountInformationPage;
-import GuiPages.HomePage;
-import GuiPages.SignUpAndLoginPage;
+import GuiPages.*;
 import baseURL.BaseURL;
-import com.shaft.driver.SHAFT;
 import com.shaft.tools.io.JSONFileManager;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.util.Date;
-
-
 
 
 public class TestSignUp extends BaseURL {
@@ -24,13 +18,13 @@ public class TestSignUp extends BaseURL {
     @BeforeClass
     public void beforeClass() {
 
-        jsonFileManager = new JSONFileManager("src/test/resources/testDataFiles/register.json");
+        jsonFileManager = new JSONFileManager("src/test/resources/testDataFiles/signUp.json");
     }
 
 
     @Test
 
-    public void RegisterUser(){
+    public void RegisterUser() {
         String email = jsonFileManager.getTestData("email") + current_time.substring(6) + "@helaly.com";
 
         homePage.verifyThatHomePageIsVisibleSuccessfully();
@@ -68,14 +62,16 @@ public class TestSignUp extends BaseURL {
         AccountCreatedPage accountCreatedPage = accountInformationPage.clickCreateAccountButton();
 
         accountCreatedPage.verifyThatAccountCreatedIsVisible();
+        homePage = accountCreatedPage.clickContinueButton();
+        homePage.verifyThatLoggedInAsIsVisible(
+                jsonFileManager.getTestData("loginName")
+        );
 
-        homePage.clickSignUpAndLoginButton();
-
-
-
-
-
+        AccountDeletedPage accountDeletedPage = homePage.clickDeleteAccountButton();
+        accountDeletedPage.clickContinueDeleteButton();
+        accountDeletedPage.VerifyThatAccountDeletedIsVisible();
     }
+
 }
 
 

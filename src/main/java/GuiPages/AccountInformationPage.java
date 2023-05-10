@@ -20,9 +20,6 @@ public class AccountInformationPage {
     private final By address1Input = By.id("address1");
     private final By address2Input = By.id("address2");
     private final By selectCountry = By.id("country");
-
-
-
     private final By stateInput = By.id("state");
     private final By cityInput = By.id("city");
     private final By zipCodInput = By.id("zipcode");
@@ -67,7 +64,3 @@ public class AccountInformationPage {
 
 
 }
-
-
-
-

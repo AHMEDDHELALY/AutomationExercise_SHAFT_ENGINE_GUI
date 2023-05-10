@@ -11,24 +11,34 @@ public class HomePage {
 
     private final By logoHomeLocator = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[1]/a");
     private final By signUpAndLoginLocator = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[4]/a");
+    private final By loggedInAsName = By.xpath("//a[contains( . , ' Logged in as ')]");
+    private final By deleteAccountButton = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[5]/a");
 
     public HomePage(SHAFT.GUI.WebDriver driver) {
         this.driver = driver;
     }
 
 
-    public void verifyThatHomePageIsVisibleSuccessfully(){
+    public void verifyThatHomePageIsVisibleSuccessfully() {
         driver.assertThat().element(logoHomeLocator).isVisible().
                 withCustomReportMessage("Verify that home page is visible successfully").perform();
 
     }
 
-    public SignUpAndLoginPage clickSignUpAndLoginButton(){
+    public SignUpAndLoginPage clickSignUpAndLoginButton() {
 
         driver.element().click(signUpAndLoginLocator);
         return new SignUpAndLoginPage(driver);
     }
 
+    public void verifyThatLoggedInAsIsVisible(String name) {
+        driver.assertThat().element(loggedInAsName).isVisible().
+                withCustomReportMessage(" Verify that 'Logged in as username' is visible").perform();
+        driver.assertThat().element(loggedInAsName).text().isEqualTo(name).perform();
+    }
 
-
+    public AccountDeletedPage clickDeleteAccountButton(){
+        driver.element().click(deleteAccountButton);
+        return new AccountDeletedPage(driver);
+    }
 }

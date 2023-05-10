@@ -1,0 +1,100 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '1 out of 1' test cases in the current suite                                        
+                                                 Test Method: 'GuiTests.TestSignUp.RegisterUser'                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:18.0930 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:18.0930 PM
+[ReportManager] Attempting to getAttribute "hidden" from elementLocator "By.xpath: //*[@id="header"]/div/div/div/div[2]/div/ul/li[1]/a". @10-05-2023 17:19:20.0018 PM
+[ReportManager] Get attribute from " Home". @10-05-2023 17:19:20.0122 PM
+[ReportManager] Expected "null", and actual "null" @10-05-2023 17:19:20.0122 PM
+[ReportManager] Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'null' for the 'hidden' attribute, element locator 'By.xpath: //*[@id="header"]/div/div/div/div[2]/div/ul/li[1]/a'" and Actual "null". Comparison Type "EQUALS". Validation Type "POSITIVE". @10-05-2023 17:19:46.0383 PM
+[ReportManager] Assertion Passed: Verify that home page is visible successfully @10-05-2023 17:19:46.0383 PM
+[ReportManager] Successfully created attachment 'Screenshot - 1683731974912_RegisterUser_ValidateElementAttribute_passed' @10-05-2023 17:19:46.0562 PM
+[ReportManager] Click " Signup / Login". @10-05-2023 17:19:46.0756 PM
+[ReportManager] Attempting to getAttribute "hidden" from elementLocator "By.xpath: //*[@id="form"]/div/div/div[3]/div/h2". @10-05-2023 17:19:48.0099 PM
+[ReportManager] Get attribute from "New User Signup!". @10-05-2023 17:19:48.0194 PM
+[ReportManager] Expected "null", and actual "null" @10-05-2023 17:19:48.0194 PM
+[ReportManager] Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'null' for the 'hidden' attribute, element locator 'By.xpath: //*[@id="form"]/div/div/div[3]/div/h2'" and Actual "null". Comparison Type "EQUALS". Validation Type "POSITIVE". @10-05-2023 17:19:50.0471 PM
+[ReportManager] Assertion Passed: Verify 'New User Signup!' is visible @10-05-2023 17:19:50.0472 PM
+[ReportManager] Successfully created attachment 'Screenshot - 1683731989254_RegisterUser_ValidateElementAttribute_passed' @10-05-2023 17:19:50.0475 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:50.0476 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:50.0476 PM
+[ReportManager] Type "Helaly" into "Name". @10-05-2023 17:19:50.0635 PM
+[ReportManager] Type "Ahmed1947234@helaly.com" into "Email Address". @10-05-2023 17:19:50.0732 PM
+[ReportManager] Click "Signup". @10-05-2023 17:19:50.0911 PM
+[ReportManager] Attempting to getAttribute "hidden" from elementLocator "By.xpath: //*[@id="form"]/div/div/div/div/h2/b". @10-05-2023 17:19:53.0289 PM
+[ReportManager] Get attribute from "By.xpath: //*[@id="form"]/div/div/div/div/h2/b". @10-05-2023 17:19:53.0375 PM
+[ReportManager] Expected "null", and actual "null" @10-05-2023 17:19:53.0376 PM
+[ReportManager] Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'null' for the 'hidden' attribute, element locator 'By.xpath: //*[@id="form"]/div/div/div/div/h2/b'" and Actual "null". Comparison Type "EQUALS". Validation Type "POSITIVE". @10-05-2023 17:19:58.0483 PM
+[ReportManager] Assertion Passed: Verify that 'ENTER ACCOUNT INFORMATION' is visible @10-05-2023 17:19:58.0484 PM
+[ReportManager] Successfully created attachment 'Screenshot - 1683731995761_RegisterUser_ValidateElementAttribute_passed' @10-05-2023 17:19:58.0489 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0489 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0489 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0501 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0502 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0513 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0513 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0524 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0524 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0535 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0536 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0546 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0546 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0557 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0557 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0567 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0567 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0579 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0579 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0590 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0591 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0601 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0601 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0611 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0611 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0621 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0621 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0631 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:19:58.0632 PM
+[ReportManager] Click "Mr.". @10-05-2023 17:19:58.0820 PM
+[ReportManager] Type "12345678" into "Password *". @10-05-2023 17:19:58.0904 PM
+[ReportManager] Select "5" from "By.id: days". @10-05-2023 17:19:59.0194 PM
+[ReportManager] Select "May" from "By.id: months". @10-05-2023 17:19:59.0471 PM
+[ReportManager] Select "2000" from "By.id: years". @10-05-2023 17:20:00.0118 PM
+[ReportManager] Click "Sign up for our newsletter!". @10-05-2023 17:20:00.0292 PM
+[ReportManager] Click "Receive special offers from our partners!". @10-05-2023 17:20:00.0476 PM
+[ReportManager] Type "Ahmed" into "First name *". @10-05-2023 17:20:00.0559 PM
+[ReportManager] Type "Helaly" into "Last name *". @10-05-2023 17:20:00.0641 PM
+[ReportManager] Type "Test" into "Company". @10-05-2023 17:20:00.0724 PM
+[ReportManager] Type "Cairo" into "Address * (Street address, P.O. Box, Company name, etc.)". @10-05-2023 17:20:00.0804 PM
+[ReportManager] Type "Alex" into "Address 2". @10-05-2023 17:20:00.0888 PM
+[ReportManager] Select "India" from "Country *". @10-05-2023 17:20:01.0040 PM
+[ReportManager] Type "state" into "State *". @10-05-2023 17:20:01.0122 PM
+[ReportManager] Type "City" into "City * Zipcode *". @10-05-2023 17:20:01.0201 PM
+[ReportManager] Type "zipCod" into "By.id: zipcode". @10-05-2023 17:20:01.0282 PM
+[ReportManager] Type "01009545654" into "Mobile Number *". @10-05-2023 17:20:01.0366 PM
+[ReportManager] Click "Create Account". @10-05-2023 17:20:01.0563 PM
+[ReportManager] Attempting to getAttribute "hidden" from elementLocator "By.xpath: //b[contains(.,'Account Created')]". @10-05-2023 17:20:03.0780 PM
+[ReportManager] Get attribute from "By.xpath: //b[contains(.,'Account Created')]". @10-05-2023 17:20:03.0843 PM
+[ReportManager] Expected "null", and actual "null" @10-05-2023 17:20:03.0843 PM
+[ReportManager] Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'null' for the 'hidden' attribute, element locator 'By.xpath: //b[contains(.,'Account Created')]'" and Actual "null". Comparison Type "EQUALS". Validation Type "POSITIVE". @10-05-2023 17:20:05.0842 PM
+[ReportManager] Assertion Passed: Verify that 'ACCOUNT CREATED!' is visible @10-05-2023 17:20:05.0843 PM
+[ReportManager] Successfully created attachment 'Screenshot - 1683732004761_RegisterUser_ValidateElementAttribute_passed' @10-05-2023 17:20:05.0845 PM
+[ReportManager] Click "Continue". @10-05-2023 17:20:06.0010 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:20:06.0010 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/signUp.json"". @10-05-2023 17:20:06.0010 PM
+[ReportManager] Attempting to getAttribute "hidden" from elementLocator "By.xpath: //a[contains( . , ' Logged in as ')]". @10-05-2023 17:20:10.0478 PM
+[ReportManager] Get attribute from "By.xpath: //a[contains( . , ' Logged in as ')]". @10-05-2023 17:20:10.0538 PM
+[ReportManager] Expected "null", and actual "null" @10-05-2023 17:20:10.0539 PM
+[ReportManager] Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'null' for the 'hidden' attribute, element locator 'By.xpath: //a[contains( . , ' Logged in as ')]'" and Actual "null". Comparison Type "EQUALS". Validation Type "POSITIVE". @10-05-2023 17:20:33.0767 PM
+[ReportManager] Assertion Passed:  Verify that 'Logged in as username' is visible @10-05-2023 17:20:33.0767 PM
+[ReportManager] Successfully created attachment 'Screenshot - 1683732023904_RegisterUser_ValidateElementAttribute_passed' @10-05-2023 17:20:33.0895 PM
+[ReportManager] Get text "Logged in as Helaly" from "By.xpath: //a[contains( . , ' Logged in as ')]". @10-05-2023 17:20:33.0936 PM
+[ReportManager] Expected "Logged in as Helaly", and actual "Logged in as Helaly" @10-05-2023 17:20:33.0937 PM
+[ReportManager] Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'Logged in as Helaly' for the 'text' attribute, element locator 'By.xpath: //a[contains( . , ' Logged in as ')]'" and Actual "Logged in as Helaly". Comparison Type "EQUALS". Validation Type "POSITIVE". @10-05-2023 17:20:56.0947 PM
+[ReportManager] Assertion Passed: The Element located by "By.xpath: //a[contains( . , ' Logged in as ')]" text is equal to "Logged in as Helaly". @10-05-2023 17:20:56.0948 PM
+[ReportManager] Successfully created attachment 'Screenshot - 1683732046607_RegisterUser_ValidateElementAttribute_passed' @10-05-2023 17:20:57.0081 PM
+[ReportManager] Click " Delete Account". @10-05-2023 17:20:57.0246 PM
+[ReportManager] Click "Continue". @10-05-2023 17:20:59.0190 P

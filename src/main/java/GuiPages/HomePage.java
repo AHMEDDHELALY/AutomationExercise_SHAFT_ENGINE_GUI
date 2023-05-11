@@ -1,8 +1,6 @@
 package GuiPages;
 
 import com.shaft.driver.SHAFT;
-import com.shaft.tools.io.JSONFileManager;
-import org.testng.annotations.BeforeClass;
 import org.openqa.selenium.By;
 
 public class HomePage {
@@ -10,9 +8,10 @@ public class HomePage {
     SHAFT.GUI.WebDriver driver;
 
     private final By logoHomeLocator = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[1]/a");
-    private final By signUpAndLoginLocator = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[4]/a");
-    private final By loggedInAsName = By.xpath("//a[contains( . , ' Logged in as ')]");
+    private final By signUpButton = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[4]/a");
+    private final By loggedInAsNameLocator = By.xpath("//a[contains( . , ' Logged in as ')]");
     private final By deleteAccountButton = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[5]/a");
+    private final By signInButton = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[4]/a");
 
     public HomePage(SHAFT.GUI.WebDriver driver) {
         this.driver = driver;
@@ -25,20 +24,26 @@ public class HomePage {
 
     }
 
-    public SignUpAndLoginPage clickSignUpAndLoginButton() {
+    public SignUpPage clickSignUpAndLoginButtonTOSignUp() {
 
-        driver.element().click(signUpAndLoginLocator);
-        return new SignUpAndLoginPage(driver);
+        driver.element().click(signUpButton);
+        return new SignUpPage(driver);
     }
 
     public void verifyThatLoggedInAsIsVisible(String name) {
-        driver.assertThat().element(loggedInAsName).isVisible().
+        driver.assertThat().element(loggedInAsNameLocator).isVisible().
                 withCustomReportMessage(" Verify that 'Logged in as username' is visible").perform();
-        driver.assertThat().element(loggedInAsName).text().isEqualTo(name).perform();
+        driver.assertThat().element(loggedInAsNameLocator).text().isEqualTo(name).perform();
     }
 
     public AccountDeletedPage clickDeleteAccountButton(){
         driver.element().click(deleteAccountButton);
         return new AccountDeletedPage(driver);
+    }
+
+    public SignInPage clickSignUpAndLoginButtonToSignIn(){
+        driver.element().click(signInButton);
+        return new SignInPage(driver);
+
     }
 }

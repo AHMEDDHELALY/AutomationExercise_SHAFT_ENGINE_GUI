@@ -1,0 +1,20 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '1 out of 1' test cases in the current suite                                        
+                                                 Test Method: 'GuiTests.TestSignIn.SignUpAsUser'                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] Attempting to getAttribute "hidden" from elementLocator "By.xpath: //*[@id="header"]/div/div/div/div[2]/div/ul/li[1]/a". @11-05-2023 13:33:38.0497 PM
+[ReportManager] Get attribute from " Home". @11-05-2023 13:33:38.0603 PM
+[ReportManager] Expected "null", and actual "null" @11-05-2023 13:33:38.0603 PM
+[ReportManager] Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'null' for the 'hidden' attribute, element locator 'By.xpath: //*[@id="header"]/div/div/div/div[2]/div/ul/li[1]/a'" and Actual "null". Comparison Type "EQUALS". Validation Type "POSITIVE". @11-05-2023 13:33:59.0921 PM
+[ReportManager] Assertion Passed: Verify that home page is visible successfully @11-05-2023 13:33:59.0922 PM
+[ReportManager] Successfully created attachment 'Screenshot - 1683804829463_SignUpAsUser_ValidateElementAttribute_passed' @11-05-2023 13:33:59.0939 PM
+[ReportManager] Click " Signup / Login". @11-05-2023 13:34:00.0131 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/signIn.json"". @11-05-2023 13:34:00.0133 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/signIn.json"". @11-05-2023 13:34:00.0133 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/signIn.json"". @11-05-2023 13:34:01.0156 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/signIn.json"". @11-05-2023 13:34:01.0156 PM
+[ReportManager] Type "helaly2@test.com" into "Email Address". @11-05-2023 13:34:04.0996 PM
+[ReportManager] Type "12345678" into "Password". @11-05-2023 13:34:05.0092 PM
+[ReportManager] Click "Login". @11-05-2023 13:34:05.0274 P

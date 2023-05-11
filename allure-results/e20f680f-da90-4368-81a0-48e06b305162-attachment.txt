@@ -1,0 +1,88 @@
+[INFO ] 2023-05-11 13:33:26.001 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                                      Powered by SHAFT Engine v7.2.20230425                                                      
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-05-11 13:33:26.997 [main] ReportManager - Loaded OpenCV "opencv_java470".
+[INFO ] 2023-05-11 13:33:27.002 [main] ReportManager - Folder "execution-summary" was not found, it may have already been deleted.
+[INFO ] 2023-05-11 13:33:27.002 [main] ReportManager - Initializing Allure Reporting Environment...
+[INFO ] 2023-05-11 13:33:27.035 [main] ReportManager - Executing: "chmod u+x generate_allure_report.sh" locally.
+[INFO ] 2023-05-11 13:33:27.050 [main] ReportManager - Terminal Action "PerformTerminalCommands" successfully performed. With the following test data "Host Name: "localHost" | Command: "chmod u+x generate_allure_report.sh" | Exit Status: "0"".
+[INFO ] 2023-05-11 13:33:27.118 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative File Path: "allure-results/environment.xml"".
+[INFO ] 2023-05-11 13:33:27.121 [main] ReportManager - File Action "WriteToFile" successfully performed. With the following test data "Target File Path: "/Users/baianat/IdeaProjects/AutomationExercise_SHAFT_ENGINE_GUI/allure-results/environment.xml"".
+[INFO ] 2023-05-11 13:33:27.122 [main] ReportManager - Initializing Extent Reporting Environment...
+[INFO ] 2023-05-11 13:33:27.518 [main] Utils - [TestNG] Running:
+  /Users/baianat/Library/Caches/JetBrains/IdeaIC2023.1/temp-testng-customsuite.xml
+
+[INFO ] 2023-05-11 13:33:27.535 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                             Starting execution of suite setup configuration method                                             
+                                          'com.shaft.listeners.internal.ConfigurationHelper.suiteSetup'                                          
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-05-11 13:33:27.608 [main] ReportManager - Initializing Important Links...
+[INFO ] 2023-05-11 13:33:27.612 [main] ReportManager - Initializing Properties...
+[INFO ] 2023-05-11 13:33:27.673 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                                Starting execution of set up configuration method                                                
+                                                           'GuiTests.TestSignIn.setUp'                                                           
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-05-11 13:33:27.686 [main] ReportManager - Setting "targetOperatingSystem" property with "MAC".
+[INFO ] 2023-05-11 13:33:27.687 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/downloadedFiles/"".
+[INFO ] 2023-05-11 13:33:27.687 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/target/downloadedFiles/"".
+[INFO ] 2023-05-11 13:33:27.692 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/downloadedFiles/"".
+[INFO ] 2023-05-11 13:33:27.693 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/target/downloadedFiles/"".
+[INFO ] 2023-05-11 13:33:27.697 [main] ReportManager - Attempting to run locally on: "MAC | Chrome".
+[INFO ] 2023-05-11 13:33:27.697 [main] ReportManager - Identifying OS/Driver combination and selecting the correct driver version automatically. Please note that if a new driver executable will be downloaded it may take some time...
+[DEBUG] 2023-05-11 13:33:27.920 [main] ResolutionCache - Resolution chrome=112 in cache (valid until 14:09:25 11/05/2023 EET)
+[DEBUG] 2023-05-11 13:33:27.921 [main] ResolutionCache - Resolution chrome112=112.0.5615.49 in cache (valid until 16:27:35 11/05/2023 EET)
+[INFO ] 2023-05-11 13:33:27.921 [main] WebDriverManager - Using chromedriver 112.0.5615.49 (resolved driver for Chrome 112)
+[DEBUG] 2023-05-11 13:33:27.930 [main] WebDriverManager - Driver chromedriver 112.0.5615.49 found in cache
+[INFO ] 2023-05-11 13:33:27.931 [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/baianat/.cache/selenium/chromedriver/mac64/112.0.5615.49/chromedriver
+[WARN ] 2023-05-11 13:33:28.131 [Exec Stream Pumper] ReportManager - Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 20908
+[WARN ] 2023-05-11 13:33:28.131 [Exec Stream Pumper] ReportManager - Only local connections are allowed.
+[WARN ] 2023-05-11 13:33:28.131 [Exec Stream Pumper] ReportManager - Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[WARN ] 2023-05-11 13:33:28.133 [Exec Stream Pumper] ReportManager - ChromeDriver was started successfully.
+[INFO ] 2023-05-11 13:33:29.733 [main] ReportManager - Successfully Opened: "MAC | Chrome".
+[INFO ] 2023-05-11 13:33:29.786 [main] ReportManager - Target URL: "https://automationexercise.com/"
+[INFO ] 2023-05-11 13:33:33.433 [main] ReportManager - Navigate to url "https://automationexercise.com/".
+[INFO ] 2023-05-11 13:33:33.435 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                             Starting execution of before class configuration method                                             
+                                                        'GuiTests.TestSignIn.beforeClass'                                                        
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-05-11 13:33:33.436 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/signIn.json"".
+[INFO ] 2023-05-11 13:33:33.437 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/signIn.json"".
+[INFO ] 2023-05-11 13:33:33.437 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/signIn.json"".
+[INFO ] 2023-05-11 13:33:33.439 [main] ReportManager - Successfully created attachment 'Test Data - JSON'
+[INFO ] 2023-05-11 13:33:38.463 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '1 out of 1' test cases in the current suite                                        
+                                                 Test Method: 'GuiTests.TestSignIn.SignUpAsUser'                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-05-11 13:33:38.497 [main] ReportManager - Attempting to getAttribute "hidden" from elementLocator "By.xpath: //*[@id="header"]/div/div/div/div[2]/div/ul/li[1]/a".
+[INFO ] 2023-05-11 13:33:38.603 [main] ReportManager - Get attribute from " Home".
+[INFO ] 2023-05-11 13:33:38.603 [main] ReportManager - Expected "null", and actual "null"
+[INFO ] 2023-05-11 13:33:59.922 [main] ReportManager - Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'null' for the 'hidden' attribute, element locator 'By.xpath: //*[@id="header"]/div/div/div/div[2]/div/ul/li[1]/a'" and Actual "null". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[INFO ] 2023-05-11 13:33:59.939 [main] ReportManager - Successfully created attachment 'Screenshot - 1683804829463_SignUpAsUser_ValidateElementAttribute_passed'
+[INFO ] 2023-05-11 13:34:00.131 [main] ReportManager - Click " Signup / Login".
+[INFO ] 2023-05-11 13:34:00.133 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/signIn.json"".
+[INFO ] 2023-05-11 13:34:00.133 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/signIn.json"".
+[INFO ] 2023-05-11 13:34:01.156 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/signIn.json"".
+[INFO ] 2023-05-11 13:34:01.156 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/signIn.json"".
+[INFO ] 2023-05-11 13:34:04.996 [main] ReportManager - Type "helaly2@test.com" into "Email Address".
+[INFO ] 2023-05-11 13:34:05.092 [main] ReportManager - Type "12345678" into "Password".
+[INFO ] 2023-05-11 13:34:05.274 [main] ReportManager - Click "Login".
+[INFO ] 2023-05-11 13:34:05.278 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: SignUpAsUser'
+[INFO ] 2023-05-11 13:34:05.358 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                            Starting execution of suite teardown configuration method                                            
+                                        'com.shaft.listeners.internal.ConfigurationHelper.suiteTeardown'                                        
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-05-11 13:34:05.359 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Execution log'
+[INFO ] 2023-05-11 13:34:05.359 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/logs/log4j.log"".
+[INFO ] 2023-05-11 13:34:05.359 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "target/logs/log4j.log"".

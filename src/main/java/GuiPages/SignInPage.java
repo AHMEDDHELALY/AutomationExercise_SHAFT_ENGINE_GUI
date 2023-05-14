@@ -9,6 +9,7 @@ public class SignInPage {
     private final By emailSignInTextFailed = By.xpath("//input[@data-qa='login-email']");
     private final By passwordSignInTextFailed = By.xpath("//input[@data-qa='login-password']");
     private final By signInButton = By.xpath("//button[@data-qa='login-button']");
+    private final By wrongMessage = By.xpath("//p[@style='color: red;']");
 
 
     public SignInPage(SHAFT.GUI.WebDriver driver) {
@@ -28,5 +29,10 @@ public class SignInPage {
     public HomePage clickSigInpButton(){
         driver.element().click(signInButton);
         return new HomePage(driver);
+    }
+
+    public void VerifyYourEmailOrPasswordIsIncorrect(){
+        driver.assertThat().element(wrongMessage).isVisible().
+                withCustomReportMessage("Verify error 'Your email or password is incorrect!' is visible");
     }
 }

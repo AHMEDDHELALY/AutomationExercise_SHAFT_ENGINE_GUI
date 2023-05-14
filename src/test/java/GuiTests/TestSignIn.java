@@ -33,7 +33,7 @@ public class TestSignIn extends BaseURL {
                 jsonFileManager.getTestData("email"),
                 jsonFileManager.getTestData("password")
         );
-        signInPage.clickSigInpButton();
+        signInPage.clickSigInButton();
         homePage.verifyThatLoggedInAsIsVisible(jsonFileManager.getTestData("loginName"));
 
         homePage.clickLogOutButton();
@@ -53,7 +53,7 @@ public class TestSignIn extends BaseURL {
                 jsonFileManager.getTestData("invalidEmail"),
                 jsonFileManager.getTestData("invalidPassword")
         );
-        signInPage.clickSigInpButton();
+        signInPage.clickSigInButton();
 
         signInPage.VerifyYourEmailOrPasswordIsIncorrect();
     }

@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 
 public class SignInPage {
     SHAFT.GUI.WebDriver driver;
+
+    //Locator
     private final By loginToYourAccountText = By.xpath("//div[@class='login-form']/child::h2");
     private final By emailSignInTextFailed = By.xpath("//input[@data-qa='login-email']");
     private final By passwordSignInTextFailed = By.xpath("//input[@data-qa='login-password']");
@@ -12,27 +14,47 @@ public class SignInPage {
     private final By emailOrPasswordIncorrectMessageLocator = By.xpath("//p[@style='color: red;']");
 
 
+    //Constructor
     public SignInPage(SHAFT.GUI.WebDriver driver) {
         this.driver = driver;
     }
 
-    public void verifyLoginToYourAccountIsVisible(){
+
+    /**
+     * Verify 'Login to your account' is visible
+     */
+    public void verifyLoginToYourAccountIsVisible() {
         driver.assertThat().element(loginToYourAccountText).isVisible().
-                withCustomReportMessage("Verify 'Login to your account' is visible");
+                withCustomReportMessage("Verify 'Login to your account' is visible").perform();
     }
 
-    public void loginToYourAccount(String email, String password){
+
+    /**
+     * login To Your Account
+     *
+     * @param email
+     * @param password
+     */
+    public void loginToYourAccount(String email, String password) {
         driver.element().type(emailSignInTextFailed, email);
         driver.element().type(passwordSignInTextFailed, password);
     }
 
-    public HomePage clickSigInpButton(){
+    /**
+     * click SigIn Button
+     *
+     * @return Home Page
+     */
+    public HomePage clickSigInButton() {
         driver.element().click(signInButton);
         return new HomePage(driver);
     }
 
-    public void VerifyYourEmailOrPasswordIsIncorrect(){
+    /**
+     * Verify error 'Your email or password is incorrect!' is visible
+     */
+    public void VerifyYourEmailOrPasswordIsIncorrect() {
         driver.assertThat().element(emailOrPasswordIncorrectMessageLocator).isVisible().
-                withCustomReportMessage("Verify error 'Your email or password is incorrect!' is visible");
+                withCustomReportMessage("Verify error 'Your email or password is incorrect!' is visible").perform();
     }
 }

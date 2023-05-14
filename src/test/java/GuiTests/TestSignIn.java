@@ -20,8 +20,7 @@ public class TestSignIn extends BaseURL {
     }
 
     @Test
-
-    public void SignUpAsUser(){
+    public void SignInAsUserWithValidData(){
 
         homePage.verifyThatHomePageIsVisibleSuccessfully();
 
@@ -35,5 +34,27 @@ public class TestSignIn extends BaseURL {
                 jsonFileManager.getTestData("password")
         );
         signInPage.clickSigInpButton();
+        homePage.verifyThatLoggedInAsIsVisible(jsonFileManager.getTestData("loginName"));
+
+//        homePage.clickLogOutButton();
+    }
+
+    @Test
+    public void SignInAsUserWithIncorrectEmailAndPassword(){
+
+        homePage.verifyThatHomePageIsVisibleSuccessfully();
+
+
+        SignInPage signInPage = homePage.clickSignUpAndLoginButtonToSignIn();
+
+        signInPage.verifyLoginToYourAccountIsVisible();
+
+        signInPage.loginToYourAccount(
+                jsonFileManager.getTestData("invalidEmail"),
+                jsonFileManager.getTestData("invalidPassword")
+        );
+        signInPage.clickSigInpButton();
+
+//        signInPage.VerifyYourEmailOrPasswordIsIncorrect();
     }
 }

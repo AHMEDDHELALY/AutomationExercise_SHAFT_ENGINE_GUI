@@ -95,4 +95,9 @@ public class HomePage {
         return new ContactUsPage(driver);
     }
 
+    public TestCasesPage clickTestCasePage(){
+        driver.element().click(testCaseButton);
+        return new TestCasesPage(driver);
+    }
+
 }

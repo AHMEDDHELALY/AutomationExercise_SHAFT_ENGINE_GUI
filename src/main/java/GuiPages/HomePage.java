@@ -8,10 +8,11 @@ public class HomePage {
     SHAFT.GUI.WebDriver driver;
 
     private final By logoHomeLocator = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[1]/a");
-    private final By signUpButton = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[4]/a");
+    private final By signUpAndLoginButton = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[4]/a");
     private final By loggedInAsNameLocator = By.xpath("//a[contains( . , ' Logged in as ')]");
     private final By deleteAccountButton = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[5]/a");
-    private final By signInButton = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[4]/a");
+    private final By logOutButton = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[4]/a");
+
 
     public HomePage(SHAFT.GUI.WebDriver driver) {
         this.driver = driver;
@@ -26,7 +27,7 @@ public class HomePage {
 
     public SignUpPage clickSignUpAndLoginButtonTOSignUp() {
 
-        driver.element().click(signUpButton);
+        driver.element().click(signUpAndLoginButton);
         return new SignUpPage(driver);
     }
 
@@ -42,8 +43,12 @@ public class HomePage {
     }
 
     public SignInPage clickSignUpAndLoginButtonToSignIn(){
-        driver.element().click(signInButton);
+        driver.element().click(signUpAndLoginButton);
         return new SignInPage(driver);
 
+    }
+    public SignInPage clickLogOutButton(){
+        driver.element().click(logOutButton);
+        return new SignInPage(driver);
     }
 }

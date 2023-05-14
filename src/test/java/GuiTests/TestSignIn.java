@@ -36,7 +36,7 @@ public class TestSignIn extends BaseURL {
         signInPage.clickSigInpButton();
         homePage.verifyThatLoggedInAsIsVisible(jsonFileManager.getTestData("loginName"));
 
-//        homePage.clickLogOutButton();
+        homePage.clickLogOutButton();
     }
 
     @Test
@@ -55,6 +55,6 @@ public class TestSignIn extends BaseURL {
         );
         signInPage.clickSigInpButton();
 
-//        signInPage.VerifyYourEmailOrPasswordIsIncorrect();
+        signInPage.VerifyYourEmailOrPasswordIsIncorrect();
     }
 }

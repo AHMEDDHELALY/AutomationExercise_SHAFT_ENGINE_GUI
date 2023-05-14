@@ -1,4 +1,7 @@
 {
-  "email": "helaly2@test.com",
-  "password": "12345678"
+  "email": "helaly@test.com",
+  "password": "12345678",
+  "loginName": "Logged in as Helaly",
+  "invalidEmail": "invalid@teat.com",
+  "invalidPassword": "0"
 }

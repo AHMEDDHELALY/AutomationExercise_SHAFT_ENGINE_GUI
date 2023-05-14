@@ -70,7 +70,6 @@ public class TestSignUp extends BaseURL {
         AccountDeletedPage accountDeletedPage = homePage.clickDeleteAccountButton();
         accountDeletedPage.clickContinueDeleteButton();
         accountDeletedPage.VerifyThatAccountDeletedIsVisible();
-
     }
 
 }

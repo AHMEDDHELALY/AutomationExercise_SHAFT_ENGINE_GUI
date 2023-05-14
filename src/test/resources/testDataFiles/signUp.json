@@ -15,5 +15,7 @@
   "city": "City",
   "zipCod": "zipCod",
   "mobileNumber": "01009545654",
-  "loginName": "Logged in as Helaly"
+  "loginName": "Logged in as Helaly",
+  "nameAlreadyExist": "Helaly",
+  "emailAlreadyExist": "helaly@test.com"
 }

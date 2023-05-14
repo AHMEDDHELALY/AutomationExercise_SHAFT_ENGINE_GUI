@@ -10,6 +10,7 @@ public class SignUpPage {
     private final By nameSignUpTextFailed = By.xpath("//input[@name='name']");
     private final By emailSignUpTextFailed = By.xpath("//input[@data-qa='signup-email']");
     private final By signUpButton = By.xpath("//button[@data-qa='signup-button']");
+    private final By emailAlreadyExistMessageLocator = By.xpath("//p[@style='color: red;']");
 
     public SignUpPage(SHAFT.GUI.WebDriver driver) {
         this.driver = driver;
@@ -28,6 +29,11 @@ public class SignUpPage {
     public AccountInformationPage clickSignUpButton(){
         driver.element().click(signUpButton);
         return new AccountInformationPage(driver);
+    }
+
+    public void verifyErrorEmailAddressAlreadyExistIsVisible(){
+        driver.assertThat().element(emailAlreadyExistMessageLocator).isVisible().
+                withCustomReportMessage("Verify error 'Email Address already exist!' is visible");
     }
 
 

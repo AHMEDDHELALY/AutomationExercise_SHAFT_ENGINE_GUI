@@ -23,8 +23,7 @@ public class TestSignUp extends BaseURL {
 
 
     @Test
-
-    public void SignUpAsUser() {
+    public void SignUpAsUserWithValidData() {
         String email = jsonFileManager.getTestData("email") + current_time.substring(6) + "@helaly.com";
 
         homePage.verifyThatHomePageIsVisibleSuccessfully();
@@ -72,6 +71,21 @@ public class TestSignUp extends BaseURL {
         accountDeletedPage.VerifyThatAccountDeletedIsVisible();
     }
 
+    @Test
+    public void SignUpAsUserWithInValidData() {
+
+        SignUpPage signUpPage = homePage.clickSignUpAndLoginButtonTOSignUp();
+
+        signUpPage.verifyNewUserSignUpIsVisible();
+        signUpPage.newUserSignUp(
+                jsonFileManager.getTestData("nameAlreadyExist"),
+                jsonFileManager.getTestData("emailAlreadyExist")
+        );
+        signUpPage.verifyErrorEmailAddressAlreadyExistIsVisible();
+    }
 }
+
+
+
 
 

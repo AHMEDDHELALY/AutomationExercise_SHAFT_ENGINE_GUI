@@ -5,15 +5,21 @@ import org.openqa.selenium.By;
 
 public class AccountCreatedPage {
     SHAFT.GUI.WebDriver driver;
-    private final By accountCreatedLocator =  By.xpath("//b[contains(.,'Account Created')]");
+
+    //Locator
+    private final By accountCreatedLocator = By.xpath("//b[contains(.,'Account Created')]");
     private final By continueButton = By.xpath("//*[@id=\"form\"]/div/div/div/div/a");
 
 
-
+    //Constructor
     public AccountCreatedPage(SHAFT.GUI.WebDriver driver) {
         this.driver = driver;
     }
 
+
+    /**
+     * Verify that 'ACCOUNT CREATED!' is visible
+     */
     public void verifyThatAccountCreatedIsVisible() {
 
         driver.assertThat().element(accountCreatedLocator).isVisible().
@@ -21,7 +27,12 @@ public class AccountCreatedPage {
     }
 
 
-    public HomePage clickContinueButton(){
+    /**
+     * click in Continue Button
+     *
+     * @return Home Page
+     */
+    public HomePage clickContinueButton() {
         driver.element().click(continueButton);
         return new HomePage(driver);
     }

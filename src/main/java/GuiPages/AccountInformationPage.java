@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 public class AccountInformationPage {
 
     SHAFT.GUI.WebDriver driver;
+
+    //Locator
     private final By titleOfAccountInformationPage = By.xpath("//*[@id=\"form\"]/div/div/div/div/h2/b");
     private final By toggleButtonOfTheTitle = By.id("id_gender1");
     private final By passwordInput = By.id("password");
@@ -26,22 +28,46 @@ public class AccountInformationPage {
     private final By mobileNumberInput = By.id("mobile_number");
     private final By createAccountButton = By.xpath("//*[@id=\"form\"]/div/div/div/div/form/button");
 
+
+    //Constructor
     public AccountInformationPage(SHAFT.GUI.WebDriver driver) {
         this.driver = driver;
     }
 
+
+    /**
+     * Verify that 'ENTER ACCOUNT INFORMATION' is visible
+     */
     public void verifyThatEnterAccountIsVisible() {
         driver.assertThat().element(titleOfAccountInformationPage).
                 isVisible().withCustomReportMessage("Verify that 'ENTER ACCOUNT INFORMATION' is visible").perform();
     }
 
+    /**
+     * ENTER ACCOUNT INFORMATION
+     *
+     * @param password
+     * @param day
+     * @param month
+     * @param year
+     * @param firstName
+     * @param lastName
+     * @param company
+     * @param address1
+     * @param address2
+     * @param country
+     * @param state
+     * @param city
+     * @param zipCod
+     * @param mobileNumber
+     */
     public void FillAccountDetails(String password, String day, String month, String year, String firstName, String lastName, String company,
                                    String address1, String address2, String country, String state, String city, String zipCod, String mobileNumber) {
         driver.element().click(toggleButtonOfTheTitle);
         driver.element().type(passwordInput, password);
         driver.element().select(selectDay, day);
         driver.element().select(selectMonth, month);
-        driver.element().select(selectYear ,year);
+        driver.element().select(selectYear, year);
         driver.element().click(newsletterCheckbox);
         driver.element().click(optionCheckbox);
         driver.element().type(firstNameInput, firstName);
@@ -57,9 +83,15 @@ public class AccountInformationPage {
 
     }
 
-    public AccountCreatedPage clickCreateAccountButton(){
+
+    /**
+     * click in create account Button
+     *
+     * @return Account Created Page
+     */
+    public AccountCreatedPage clickCreateAccountButton() {
         driver.element().click(createAccountButton);
-        return new  AccountCreatedPage (driver);
+        return new AccountCreatedPage(driver);
     }
 
 
